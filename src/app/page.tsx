@@ -16,7 +16,7 @@ export default function Home() {
   //functions
 
   const addItem = () => {
-    let obj = todos.find((item: any) => item.id == id);
+    let obj:any = todos.find((item: any) => item.id == id);
     console.log("object", obj);
 
     if (obj) {
@@ -34,7 +34,7 @@ export default function Home() {
   // edit function
 
   const editItem = (id: any) => {
-    let obj = todos.find((item: any) => item.id == id);
+    let obj:any = todos.find((item: any) => item.id == id);
     setInput(obj.task);
     setId(obj.id);
   };
